@@ -1,4 +1,4 @@
-=== Plugin Name ===
+===Plugin Name===
 Contributors: internetsplash
 Donate link: http://www.rspca.org.uk/home
 Tags: post, date, automatic, random
