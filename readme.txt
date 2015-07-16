@@ -1,5 +1,5 @@
 ===Plugin Name===
-Contributors: internetsplash
+Contributors: isplash
 Donate link: http://www.rspca.org.uk/home
 Tags: post, date, automatic, random
 Requires at least: 3.0.1
@@ -15,8 +15,6 @@ Randomly change the post date (past or future) for your posts to back date/set i
 WP Random Post Dater is a WordPress plugin that will change the date of your posts to any random date in the past or future. You can select how many days in the past (or future, or a mix) you want the post date to be changed to.
 
 You can randomly set the dates on ALL posts, or only ones in a certain category, or only ones with a certain tag.
-
-More info: http://www.internetsplash.com/blog/wp-random-post-dater/
 
 Video demo: http://www.youtube.com/watch?feature=player_embedded&v=7_C058wy4UY 
 
@@ -56,6 +54,9 @@ Yes, just use both the Days in past and days in future input box.
 2. Completed Action
 
 == Changelog ==
+
+= 0.91 =
+* Readme changes
 
 = 0.9 =
 * First version

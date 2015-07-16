@@ -1,11 +1,11 @@
 <?
 /*
 Plugin Name: WP Random Post Dater
-Plugin URI: http://www.internetsplash.com/blog/wp-random-post-dater/
+Plugin URI: http://example.com
 Description: Set posts to a random post date in the past or future.
 Version: 0.9
-Author: Ash Baker
-Author URI: http://internetsplash.com
+Author: iSplash
+Author URI: http://google.com
 License: GPL2
 */
 
