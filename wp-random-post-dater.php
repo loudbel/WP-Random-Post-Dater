@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 Plugin Name: WP Random Post Dater
 Plugin URI: http://example.com
@@ -348,7 +348,7 @@ class wp_random_post_dater {
 add_action('admin_menu','random_post_dater_admin');
 
 function random_post_dater_admin() {
-	add_options_page(__('Random Post Dater'),__('Random Post Dater'),6,'random-post-dater','random_post_dater_page');
+	add_options_page(__('Random Post Dater'),__('Random Post Dater'),'manage_options','random-post-dater','random_post_dater_page');
 }
 
 function random_post_dater_page() {
