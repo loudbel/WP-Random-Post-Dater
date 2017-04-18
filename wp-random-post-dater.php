@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 Plugin Name: WP Random Post Dater
 Plugin URI: http://example.com
@@ -285,7 +285,7 @@ class wp_random_post_dater {
 <p>Use this form to set ALL posts in the selected category to a random date between these two values.</p>
 
 <p><u>This will update the post dates on ALL posts within the selected category/tag (or ALL posts in your wordpress blog if both are set to default). Please do not use if you do not want to reset ALL post dates. I do not recommend using this on a site with lots of live posts - especially if you use a permalink structure that includes the date in the url. I use it on new sites (add all content, then set all posts to random date in the past). Use at your own risk! You will lose the current post date time (it only changes the date posted - nothing else)</u></p>
-	<form method='post' action='<?=$_SERVER['REQUEST_URI'];?>'>
+	<form method='post' action='<?php echo $_SERVER['REQUEST_URI']; ?>'>
 
 
 <p>Only use one of the following two. Leave both at their defaults ("ALL CATEGORIES"/"ALL TAGS") to reorder ALL posts</p>
@@ -295,7 +295,7 @@ class wp_random_post_dater {
 
 <select name='incategory'>
 <option value=''>ALL CATEGORIES (All posts)</option>
-<?
+<?php
 		echo $this->get_all_cats_options();
 ?>
 </select><br /> (leave on "ALL CATEGORIES" if you don't want to reorder all within a certain category)
@@ -307,7 +307,7 @@ class wp_random_post_dater {
 
 <select name='tagid'>
 <option value=''>ALL TAGS (all posts)</option>
-<?
+<?php
 
 		echo $this->get_all_tags_options();
 
@@ -336,7 +336,7 @@ class wp_random_post_dater {
 
 </form>
 
-<?
+<?php
 
 	}
 
@@ -348,7 +348,7 @@ class wp_random_post_dater {
 add_action('admin_menu','random_post_dater_admin');
 
 function random_post_dater_admin() {
-	add_options_page(__('Random Post Dater'),__('Random Post Dater'),6,'random-post-dater','random_post_dater_page');
+	add_options_page(__('Random Post Dater'),__('Random Post Dater'),'manage_options','random-post-dater','random_post_dater_page');
 }
 
 function random_post_dater_page() {
